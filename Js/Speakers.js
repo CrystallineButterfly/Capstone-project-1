@@ -1,72 +1,72 @@
 const speakers = [
   {
-    Name: "Kacie Ahmed",
+    Name: "Kacie",
     Web3Dao: "LearnWeb3",
     Summary: "Kacie won his first hackathon after 2 months of web3!",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/web3.gif",
+      alt: "Web3 BOSS",
     },
   },
   {
-    Name: "Kacie Ahmed",
-    Web3Dao: "LearnWeb3",
-    Summary: "Kacie won his first hackathon after 2 months of web3!",
+    Name: "K42",
+    Web3Dao: "Web3 creator/developer",
+    Summary: "Its all data waves, lets surf the network",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/K42.gif",
+      alt: "Web3 BOSS",
     },
   },
   {
-    Name: "Kacie Ahmed",
-    Web3Dao: "LearnWeb3",
-    Summary: "Kacie won his first hackathon after 2 months of web3!",
+    Name: "Metalisa",
+    Web3Dao: "Web3 creator/developer",
+    Summary: "Metalist is an amazing artist and a bright soul",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/Eye.png",
+      alt: "Web3 BOSS",
     },
   },
   {
-    Name: "Kacie Ahmed",
-    Web3Dao: "LearnWeb3",
-    Summary: "Kacie won his first hackathon after 2 months of web3!",
+    Name: "Datadigit",
+    Web3Dao: "Web3 user",
+    Summary: "Datadigit spends 142 ETH a day!",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/Viking.png",
+      alt: "Web3 BOSS",
     },
   },
   {
-    Name: "Kacie Ahmed",
-    Web3Dao: "LearnWeb3",
-    Summary: "Kacie won his first hackathon after 2 months of web3!",
+    Name: "Vik",
+    Web3Dao: "Dao creator",
+    Summary: "Vik is a owner of a VVC and a DAO creator",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/vik.png",
+      alt: "Web3 BOSS",
     },
   },
   {
-    Name: "Kacie Ahmed",
-    Web3Dao: "LearnWeb3",
-    Summary: "Kacie won his first hackathon after 2 months of web3!",
+    Name: "Web3 whale",
+    Web3Dao: "Lets buy NFTS",
+    Summary: "I buy NFTS",
     Image: {
-      url: "./Images/Kacie.jpg",
-      alt: "Learnweb3 BOSS",
+      url: "./Images/whale.png",
+      alt: "Web3 BOSS",
     },
   },
 ];
 
-function createSpeakerCard({ image, name, occupation, overview }) {
+function createSpeakerCard({ Name, Web3Dao, Summary, Image }) {
   return `
   <div class="speaker">
     <img
-      class="speaker__image"
-      src="${image}"
+      class="speaker-image"
+      src="${Image.url}"
       alt="Speaker 1"
     />
-    <div class="speaker__body">
-      <div class="speaker__name">${name}</div>
-      <p class="speaker__occupation">${occupation}</p>
-      <p class="speaker__about">${overview}</p>
+    <div class="speaker-body">
+      <div class="speaker-name">${Name}</div>
+      <p class="speaker-occupation">${Web3Dao}</p>
+      <p class="speaker-about">${Summary}</p>
     </div>
   </div>
   `;
@@ -80,25 +80,23 @@ function showSpeakers(speakers) {
   speakersContainerEl.innerHTML = "";
 
   speakers.forEach((speaker) => {
-    speakersContainerEl.innerHTML += gentateSpeakerCard(speaker);
+    speakersContainerEl.innerHTML += createSpeakerCard(speaker);
   });
 }
 
 const init = () => {
-  const moreBtnEl = document.querySelector(".section__more-btn");
+  const button = document.querySelector(".see-more");
   const isMobile = window.innerWidth < 768;
   const displayedSpeakers = isMobile ? speakers.slice(0, 2) : speakers;
 
   showSpeakers(displayedSpeakers);
 
-  if (!moreBtnEl) return;
+  if (!button) return;
 
-  moreBtnEl.addEventListener("click", () => {
+  button.addEventListener("click", () => {
     showSpeakers(speakers);
-    moreBtnEl.style.display = "none";
+    button.style.display = "none";
   });
 };
 
-export default {
-  init,
-};
+window.onload = init;

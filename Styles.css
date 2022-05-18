@@ -1,10 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
- 
-/* body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #f4f5f7;
-} */
+
+
 
 /* SECTIONS & CONTAINERS */
 
@@ -21,7 +17,7 @@ section {
 
 .hero-section {
     padding: 0 3%;
-    background-color:#091e42;
+    background-color: #091e42;
     background-image: url(/Images/MATRIX1.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,51 +69,6 @@ section {
     align-items: start;
 }
 
-.skill-item {
-    background-color: #f7f7f9;
-    padding: 0.75rem;
-    border-radius: 0.75rem;
-    width: 7.625rem;
-    height: 7.5rem;
-    margin: 0 0.75rem 0 0;
-}
-
-.chevron-closed {
-    transform: rotate(-90deg);
-}
-
-ul.hide {
-    display: none !important;
-}
-
-.closed {
-    padding: 1.5rem 0;
-    border-bottom: 0.0625rem;
-    border-style: solid;
-    border-color: #dfe1e6;
-}
-
-.skill-badge {
-    width: 3rem;
-    height: 3rem;
-}
-
-.skill-name {
-    font-size: 0.9375rem;
-    font-weight: 400;
-    color: #253858;
-    margin: 0.75rem 0;
-}
-
-.skill-trigger {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1.5rem;
-    font-weight: 400;
-    color: #344563;
-}
 
 .nav-container {
     max-width: 80rem;
@@ -153,7 +104,7 @@ h1.heading {
     background-image: url("/Images/test.jpg");
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; 
+    color: transparent;
 }
 
 /* Above here= sort first ~ then below! */
@@ -161,13 +112,13 @@ h1.heading {
 h2.heading {
     font-size: 2.5rem;
     font-weight: 700;
-    color:cyan;
+    color: cyan;
     text-transform: capitalize;
 }
+
 /* top of header-bottom */
 
-.program-info-wrap
-.topics {
+.program-info-wrap .topics {
     margin: 0rem 0rem 0rem .1875rem;
     padding: 0rem;
     border: 0rem;
@@ -178,28 +129,73 @@ h2.heading {
 }
 
 
+/* speakers */
 
+.speaker-image {
+    width: 9.375rem;
+}
+
+h2.speaker-title {
+    text-align: center;
+}
+
+#speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(164, 190, 205, 0.2);
+}
+
+.speaker {
+    width: 9.375rem;
+    margin: 0 auto;
+}
+
+.section-button {}
 
 
 
 
 /* Headline section */
+.bg {
+    background-color: #272a31;
+}
+
 .cards {
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: .625rem;
 }
 
-.card {
+.card { 
+    padding: 5%;
     width: 90% !important;
-    background: linear-gradient(rgba(164, 190, 205, 0.4), rgba(3, 31, 55, 0.5));
+    /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(3, 31, 55, 0.5)); */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
+.img {
+    width:30%;
+    height:30%;
+}
+
+.card-head {
+    color: white;
+}
+
+.line {
+    color: #ec5328;
+
+}
 
 .card-img-top {
-    height: 20vh !important;
+    height: 12vh !important;
 }
 
+.navlink.border {
+}
 
 
 /* end of header-bottom */
@@ -208,7 +204,7 @@ p.supporting-text {
     font-family: 'COCOGOOSE', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
-    color:#091e42;
+    color: #091e42;
 }
 
 p.about-bio {
@@ -229,7 +225,7 @@ p.about-bio {
     font-weight: 500;
     font-size: 1rem;
     line-height-step: 1.5rem;
-    color:#091e42;
+    color: #091e42;
     justify-content: space-between;
     margin: 2rem 0 1rem 0;
     font-family: 'COCOGOOSE', sans-serif;
@@ -306,7 +302,20 @@ p.about-bio {
     .skills-wrapper {
         width: 100%;
     }
+       #speakers {
+           display: block;
+       }
 
+        .speaker-image {
+            width: 9.375rem;
+        }
+    
+        h2.speaker-title {
+            text-align: center;
+        }
+    
+
+        
     .skills-list {
         margin: 1.5rem;
         display: flex;
@@ -359,20 +368,6 @@ p.about-bio {
         margin: 4.438rem 0;
     }
 
-    .reverse {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 1.5rem;
-        border-radius: 1.5rem;
-        border: 0.0625rem solid #dfe1e6;
-        background-color: #fff;
-        margin: 4.438rem 0;
-    }
-
-    .all-pages {
-        display: none;
-    }
-
     .logo {
         display: none;
     }
@@ -396,16 +391,6 @@ p.about-bio {
         background-size: cover;
         background-position: center;
     }
-}
-
-.portfolio {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 8.875rem 3%;
-}
-
-.portfolio-section {
-    background-color: #f4f5f7;
 }
 
 .project-img {
@@ -476,63 +461,6 @@ p.about-bio {
     background-color: #ebebff;
     border-radius: 0.5rem;
     margin: 0 0.5rem 0 0;
-}
-
-a.see-project {
-    margin: 1rem 0;
-    color: #396df2;
-    text-decoration: none;
-    padding: 0.75rem;
-    /* Refactor : PX -> REMs , shortcut for padding: 12px 12px 12px 12px; */
-    border: 0.0625rem solid #6070ff;
-    /* Border Size, Type , Color */
-    border-radius: 0.5rem;
-    transition: all 0.4s ease-in-out;
-    /* 400ms */
-}
-
-a.button {
-    color: #396df2;
-    text-decoration: none;
-    padding: 0.75rem;
-    /* Refactor : PX -> REMs , shortcut for padding: 12px 12px 12px 12px; */
-    border: 0.0625rem solid #6070ff;
-    /* Border Size, Type , Color */
-    border-radius: 0.5rem;
-    transition: all 0.4s ease-in-out;
-    /* 400ms */
-}
-
-a.see-project:hover {
-    background-color: #396df2;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.75rem;
-    box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
-    border: 0.0625rem solid #6070ff;
-    border-radius: 0.5rem;
-}
-
-a.see-project:focus {
-    background-color: #2230d2;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.75rem;
-    border: 0.0625rem solid #2230d2;
-    border-radius: 0.5rem;
-    outline: 0.0625rem #396df2;
-}
-
-.works-header {
-    display: grid;
-    padding: 1.125rem;
-}
-
-/* Portfolio Styles Section */
-
-section .portfolio {
-    max-width: 80rem;
-    margin: 0 auto;
 }
 
 /* About me page. */
