@@ -18,7 +18,9 @@ section {
 .hero-section {
     padding: 0 3%;
     background-color: #091e42;
-    background-image: url(/Images/MATRIX1.webp);
+    background-image: url(/Images/data.webp);
+    height: 800px;
+    width:98%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -83,7 +85,7 @@ section {
 
 .logo {
     padding: 0.625rem 0.75rem;
-    font-size: 1.125rem;
+    font-size: 3.2rem;
     color: #0019fa;
 }
 
@@ -99,7 +101,7 @@ section {
 
 h1.heading {
     font-family: 'COCOGOOSE', sans-serif;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     background-image: url("/Images/test.jpg");
     -webkit-background-clip: text;
@@ -194,23 +196,31 @@ h2.speaker-title {
     height: 12vh !important;
 }
 
-.navlink.border {
+.border {
+  border: 3px solid darkblue;
+  border-radius: 3px;
+
 }
 
 
 /* end of header-bottom */
 
 p.supporting-text {
-    font-family: 'COCOGOOSE', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #091e42;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.42rem;
+    font-weight: 200;
+    color: #d3d3d3;
+    background-color: #272a31;
+    opacity: 0.8;
+    border: 3px solid white;
+    padding: 10px;
 }
 
 p.about-bio {
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: 400;
     color: #344563;
+    border: 2px solid white;
 }
 
 .toolbar {
@@ -223,7 +233,7 @@ p.about-bio {
 .call-to-action {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height-step: 1.5rem;
     color: #091e42;
     justify-content: space-between;
