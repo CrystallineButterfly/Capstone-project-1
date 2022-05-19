@@ -4,6 +4,11 @@
 
 /* SECTIONS & CONTAINERS */
 
+.first-heading {
+ color: #d3d3d3;
+ font-family: 'COCOGOOSE', sans-serif;
+}
+
 header {
     margin: 0;
     padding: 1rem 3%;
@@ -16,9 +21,10 @@ section {
 }
 
 .hero-section {
+    display: flex;
     padding: 0 3%;
     background-color: #091e42;
-    background-image: url(/Images/data.webp);
+    background-image: url(./Images/data.webp);
     height: 800px;
     width:98%;
     background-repeat: no-repeat;
@@ -103,7 +109,7 @@ h1.heading {
     font-family: 'COCOGOOSE', sans-serif;
     font-size: 5rem;
     font-weight: 700;
-    background-image: url("/Images/test.jpg");
+    background-image: url("./Images/test.jpg");
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -160,6 +166,11 @@ h2.speaker-title {
 
 
 /* Headline section */
+.card-head {
+    text-align: center;
+    padding: 10px;
+}
+
 .bg {
     background-color: #272a31;
 }
@@ -232,10 +243,10 @@ p.about-bio {
 
 .call-to-action {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2rem;
     line-height-step: 1.5rem;
-    color: #091e42;
+    color: #d3d3d3;
     justify-content: space-between;
     margin: 2rem 0 1rem 0;
     font-family: 'COCOGOOSE', sans-serif;
@@ -389,7 +400,8 @@ p.about-bio {
         align-items: center;
     }
 
-    h1.heading {
+    h1.first-heading {
+        color: #d3d3d3;
         font-size: 2rem;
         font-family: 'COCOGOOSE', sans-serif;
     }
