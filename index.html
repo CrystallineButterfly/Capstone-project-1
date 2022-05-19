@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="10">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web3 Confernce website for capstone1</title>
     <link rel="stylesheet" href="/Styles.css">
@@ -12,11 +12,20 @@
     <script src="/Js/Speakers.js" defer></script>
     <script src=”https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js” defer></script>
 <body>
+    <div class="top-bar">
+      <ul>
+        <li><a href="https://github.com/CrystallineButterfly"><img src="./Images/github.svg" alt="github"></a></li>
+        <li><a href="https://twitter.com/CrystAlline_K42"><img src="./Images/twitter.svg" alt="twitter"></a></li>
+        <li>code</li>
+        <li>login</li>
+        <li>language</li>
+      </ul>
+    </div>
     <header>
       <div class="container main-nav">
         <div class="logo">Ω</div>
         <nav class="all-pages">
-          <a href="#" class="nav-link">About</a>
+          <a href="/about.html" class="nav-link">About</a>
           <a href="#" class="nav-link">More Alpha</a>
           <a href="#speakers" class="nav-link">Speakers</a>
           <a href="#" class="nav-link border">Hire us?</a>
@@ -41,7 +50,7 @@
               <button class="btn-close" type="button">X</button>
             </div>
             <div class="menu-list-items">
-              <a class="menu-title" href="#portfolio-menu-title">About</a>
+              <a class="menu-title" href="./about.html">About</a>
               <a class="menu-title" href="#about">Alpha</a>
               <a class="menu-title" href="#contact-section">Speakers</a>
             </div>
@@ -64,26 +73,13 @@
              Are you ready to leave web2 behind? 
              Join us for ALPHA that may cause you to Rug pull yourself from Web2!
              Web 2 = a place where data and information is easily stolen and mis-used, with too much bias on intention.
-             Web3 = a place where openness and creativity via innovation and transformation is intergal, and fully suported.  
+             Web3 = a place where openness and creativity via innovation and transformation is intergal, and fully supported.  
            </p>
 
             <!-- Highlight with icons-->
             <div class="call-to-action">2024.04.02(Start) ~ 2042(Finish)</div>
-            <div class="icons">
-              <!-- LinkedIn, Github, Angellist, Medium, Twitter-->
-              <a href="https://twitter.com/CrystAlline_K42"
-                ><img
-                  class="social-icon"
-                  src="./Images/twitter.svg"
-                  alt="twitter"
-              /></a>
-              <a href="https://github.com/CrystallineButterfly"
-                ><img
-                  class="social-icon"
-                  src="./Images/github.svg"
-                  alt="github"
-              /></a>
             </div>
+            
           </div>
         </div>
       </div>
@@ -93,31 +89,36 @@
       </header>
   <!-- section for cards -->
   <section class="bg">
+    <div>
     <h2 class="card-head">Alpha Program</h2>
   <div class="line"></div>
+  </div>
+
+
   <div class="cards">
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="/Images/Blockchain-Icon.webp" alt="blockchain" class="img">
   <div class="card-body">
     <h5 class="card-title">Blockchain Dynamics</h5>
     <p class="card-text">The block chain is a dance of opcodes with high level encryption in a song, played by us.</p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+
+<div class="card">
   <img src="/Images/eth1.webp" class="card-img-top" alt="Web3 Image">
   <div class="card-body">
     <h5 class="card-title">Smart contracts: The use cases!</h5>
     <p class="card-text">Main languages to learn, and a dance with the EVM song!</p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="/Images/42.webp" class="card-img-top" alt="Web3 Image">
   <div class="card-body">
     <h5 class="card-title">Metaverves and intergration</h5>
     <p class="card-text">Blockchain dreams</p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="/Images/DAO.webp" class="card-img-top" alt="Web3 Image">
   <div class="card-body">
     <h5 class="card-title">DAOS: The next step for all networks</h5>
@@ -125,97 +126,32 @@
   </div>
 </div>
 </div>
+<div class="learn-more">Learn More!</div>
+<div class="learn-line"></div>
 </section>
 
 <!-- section end -->
-
-    <!-- ABOUT SECTION -->
         <!-- Speakers section -->
         <h2 class="speaker-title">Speakers</h2>
         <div id="speakers"></div>
 
-<section class="about-section" id="about">
-      <div class="container">
-        <div class="flex-about">
-          <div class="about-info">
-            <h2 class="heading">
-              About <br />
-              WEB3
-            </h2>
-            <p class="about-bio">
-              Web3 is a libary in simple terms, that allows programming language to interact with the blockchain, a symbiotic but adjacent, libary of blocks where Opcodes are completed via smart contracts! 
-              What is the tapestry of each page? A few weavings are; merkile partica tree, solidty, an EVM machine and us, the true nodes who comprise the network! All will be delved into, in our exciting talk, will you be there?
-              We hope so! Web3 is the BEST network, we humans have ever created, utilised and sewed, specifially for what I call, synergetic symphonies. 
-              Many questions? Good, questions are an example of synergetic symphonies, we beings of life sing, come sing with us! 
-            </p>
-            <div class="call-to-action">LET'S TALK</div>
-            <div class="icons">
-              <!-- LinkedIn, Github, Angellist, Medium, Twitter-->
-              <a href="https://twitter.com/CrystAlline_K42"
-                ><img
-                  class="social-icon"
-                  src="./assets/icons/linkedin.svg"
-                  alt="linkedin"
-              /></a>
-              <a href="https://github.com/CrystallineButterfly"
-                ><img
-                  class="social-icon"
-                  src="./assets/icons/github.svg"
-                  alt="github"
-              /></a>
-            </div>
-            <a href="#" class="button">Get My Resume</a>
+
           </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer class="web-logos">
+  <h2>Future Sponsors</h2>
+  <div class="learn-line"></div>
+<div class="sponsors">
+<img src="./Images/fox.webp" alt="metamask">
+<img src="./Images/learn.webp" alt="learnweb3">
+<img src="./Images/whale.webp" alt="whale">
+<img src="./Images/opensea.webp" alt="opensea">
+<img src="./Images/sandbox.webp" alt="sandbox">
+</div>
+<div class="end">
+  <h2 class="end-logo">Ω</h2>
+  <p class="slogan">Web3 iz always better!</p>
+  </div>
 
 
 

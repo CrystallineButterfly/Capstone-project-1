@@ -1,13 +1,17 @@
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* SECTIONS & CONTAINERS */
 
 .first-heading {
- color: #d3d3d3;
- font-family: 'COCOGOOSE', sans-serif;
+    color: #d3d3d3;
+    font-family: 'COCOGOOSE', sans-serif;
 }
+
 
 header {
     margin: 0;
@@ -20,13 +24,17 @@ section {
     padding: 5rem 3%;
 }
 
+body {
+    border: 3px solid red;
+}
+
 .hero-section {
     display: flex;
-    padding: 0 3%;
+    padding: 0;
     background-color: #091e42;
     background-image: url(./Images/data.webp);
     height: 800px;
-    width:98%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,6 +61,24 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    padding: 0 5%;
+    justify-content: right;
+    background-color: #272a31;
+}
+
+.top-bar ul li {
+    color: #d3d3d3;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.top-bar ul {
+    display: flex;
+    list-style: none;
 }
 
 .flex-about {
@@ -144,11 +170,15 @@ h2.heading {
 }
 
 h2.speaker-title {
+    background: rgba(164, 190, 205, 0.2);
+    margin: 0 0 0 0;
     text-align: center;
 }
 
 #speakers {
     display: grid;
+    padding-top: 42px;
+    gap: 6.25rem;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     margin: 0 auto;
@@ -156,7 +186,9 @@ h2.speaker-title {
 }
 
 .speaker {
-    width: 9.375rem;
+    display: flex;
+    gap: .625rem;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -177,21 +209,58 @@ h2.speaker-title {
 
 .cards {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: .625rem;
+    flex-direction: row;
 }
 
-.card { 
-    padding: 5%;
-    width: 90% !important;
-    /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(3, 31, 55, 0.5)); */
+.card {
+    margin: 25px 2%;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.1);
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-title {
+    padding: 0 2%;
+    color: mediumpurple;
+    font-size: 20px;
+}
+
+.card-text {
+    padding: 0 2%;
+    color: #d3d3d3;
+    font-weight: 400;
+}
+
+.card-img-top {
+    /* height: 12vh !important; */
+    width: 30%;
+    margin: 0 35%;
+    justify-content: center;
+}
+
+.learn-more {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #d3d3d3;
+    margin: .25rem 30%;
+    height: 2px;
+    width: 40%;
+}
+
+.learn-line {
+    background-color: mediumpurple;
+    margin: 25px 45%;
+    height: 2px;
+    width: 10%;
 }
 
 .img {
-    width:30%;
-    height:30%;
+    width: 30%;
+    height: 90%;
+    margin: 2px 35%;
 }
 
 .card-head {
@@ -199,18 +268,16 @@ h2.speaker-title {
 }
 
 .line {
-    color: #ec5328;
-
+    background-color: mediumpurple;
+    margin: .25rem 47.5%;
+    height: 2px;
+    width: 5%;
 }
 
-.card-img-top {
-    height: 12vh !important;
-}
 
 .border {
-  border: 3px solid darkblue;
-  border-radius: 3px;
-
+    border: 3px solid darkblue;
+    border-radius: 3px;
 }
 
 
@@ -225,6 +292,53 @@ p.supporting-text {
     opacity: 0.8;
     border: 3px solid white;
     padding: 10px;
+    width: 80%;
+}
+
+footer {
+    background-color: #272a31;
+    height:300px;
+}
+
+footer h2 {
+    color: #d3d3d3;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.sponsors img  {
+    width: 10%;
+    height: 10%;
+    padding: 30px; 
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    background-color: #d3d3d3;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-logo {
+    font-size: 116px;
+    color:#0019fa;
+}
+
+.slogan {
+    color: #272a31;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'COCOGOOSE', sans-serif;
+
 }
 
 p.about-bio {
@@ -248,7 +362,7 @@ p.about-bio {
     line-height-step: 1.5rem;
     color: #d3d3d3;
     justify-content: space-between;
-    margin: 2rem 0 1rem 0;
+    margin: 20px 2%;
     font-family: 'COCOGOOSE', sans-serif;
 }
 
@@ -262,10 +376,12 @@ p.about-bio {
 }
 
 .headline-section {
-    margin: 0.75rem 0;
+    /* margin: 0.75rem 0;
     padding: 10rem 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    width: 90 font-family: 'Poppins', sans-serif;
+    font-style: normal; */
+    margin: 0 2px;
+
 }
 
 .twitter {
@@ -320,23 +436,69 @@ p.about-bio {
 }
 
 @media screen and (max-width: 768px) {
+    h1.heading {
+        font-size: 50px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 5% 2.5%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 89%;
+        border-radius: 5px;
+        padding: 10px;
+        align-items: center;
+    }
+
+        .card-img-top {
+            /* height: 12vh !important; */
+            width: 20%;
+            margin: 0 5%;
+            justify-content: center;
+        }
+
+                .img {
+                    width: 20%;
+                    height: 90%;
+                    margin: 2px 5%;
+                }
+           .sponsors {
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+    
+           }
+    
+           .sponsors img {
+               width: 10%;
+               height: 10%;
+               padding: 10px;
+           }
+
     .skills-wrapper {
         width: 100%;
     }
-       #speakers {
-           display: block;
-       }
 
-        .speaker-image {
-            width: 9.375rem;
-        }
-    
-        h2.speaker-title {
-            text-align: center;
-        }
-    
+    #speakers {
+        display: block;
+    }
 
-        
+    .speaker-image {
+        width: 9.375rem;
+    }
+
+    h2.speaker-title {
+        text-align: center;
+    }
+
+
+
     .skills-list {
         margin: 1.5rem;
         display: flex;
@@ -487,8 +649,17 @@ p.about-bio {
 
 /* About me page. */
 
-/* .about-container {
+.about-section {
     display: flex;
+    text-align: center;
+}
+
+.about-bio {
+    font-family: 'lato', sans-serif;
+}
+
+.social-icon {
+    justify-content: center;
 }
 
 /* Contact me section */
