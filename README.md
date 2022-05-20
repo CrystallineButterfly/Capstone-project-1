@@ -2,41 +2,55 @@
 
 # Project Name
 
-> Description the project.
+Hi, this is a Web3 Conference page made in relation to a template for my first capstone project of @microverse!
+I hope you enjoy, it was great fun making it!
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/CSS (with linters)
+- JS (with linters)
+- NPM/GIT BASH
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://crystallinebutterfly.github.io/Capstone-project-1/) 
+## P.s = Git pages has issues frequently on deploy, 
+## Pls watch video below to see accuratelty the output!
+
+## here is the video! ##Important pls watch :) = https://streamable.com/4q0h1z
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+##I used
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+HTML/CSS/JS
+
 ### Setup
+
+LINTERS
 
 ### Install
 
+NPM/GIT
+
 ### Usage
+
+For my capstone in relation to a theoretical web3 conference!
 
 ### Run tests
 
+LINTERS
+
 ### Deployment
 
-
+Git pages.
 
 ## Authors
 
