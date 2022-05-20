@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta http-equiv="refresh" content="10">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web3 Confernce website for capstone1</title>
     <link rel="stylesheet" href="/Styles.css">
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css”>
     <script src="/Js/Speakers.js" defer></script>
+    <script src="/Js/Dynamics.js" defer></script>
     <script src=”https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js” defer></script>
 <body>
     <div class="top-bar">
@@ -26,9 +27,11 @@
         <div class="logo">Ω</div>
         <nav class="all-pages">
           <a href="/about.html" class="nav-link">About</a>
+          <a href="#" class="nav-link">Game</a>
           <a href="#" class="nav-link">More Alpha</a>
-          <a href="#speakers" class="nav-link">Speakers</a>
-          <a href="#" class="nav-link border">Hire us?</a>
+          <a href="#" class="nav-link">Hire us?</a>
+          <a href="#" class="nav-link">Sponsors</a>
+          <a href="#speakers" class="nav-link border">Speakers</a>
         </nav>
       </div>
         <!-- MOBILE RESPONSIVE-->
@@ -40,9 +43,8 @@
             <button class="btn-open" type="button">
               <img
                 class="btn-open-img"
-                src=""
-                alt="hamburger menu"
-              />
+                src="./Images/Union.svg"
+                alt="hamburger menu"/>
             </button>
           </div>
           <div class="mobile-nav-container">
@@ -51,8 +53,11 @@
             </div>
             <div class="menu-list-items">
               <a class="menu-title" href="./about.html">About</a>
-              <a class="menu-title" href="#about">Alpha</a>
-              <a class="menu-title" href="#contact-section">Speakers</a>
+              <a class="menu-title" href="#">Game</a>
+              <a class="menu-title" href="#">More Alpha</a>
+              <a class="menu-title" href="#about">Hire us?</a>
+              <a class="menu-title" href="#">Sponsors</a>
+              <a class="menu-title" href="#speakers">Speakers</a>
             </div>
           </div>
         </div>
@@ -78,7 +83,6 @@
 
             <!-- Highlight with icons-->
             <div class="call-to-action">2024.04.02(Start) ~ 2042(Finish)</div>
-            </div>
             
           </div>
         </div>
@@ -86,7 +90,6 @@
     </section>
 
     <!-- Section extra for first page -->
-      </header>
   <!-- section for cards -->
   <section class="bg">
     <div>
@@ -115,18 +118,18 @@
   <img src="/Images/42.webp" class="card-img-top" alt="Web3 Image">
   <div class="card-body">
     <h5 class="card-title">Metaverves and intergration</h5>
-    <p class="card-text">Blockchain dreams</p>
+    <p class="card-text">Take a dive into what will be, the digital dreams we can all share and percieve!</p>
   </div>
 </div>
 <div class="card">
   <img src="/Images/DAO.webp" class="card-img-top" alt="Web3 Image">
   <div class="card-body">
     <h5 class="card-title">DAOS: The next step for all networks</h5>
-    <p class="card-text">Blockchain dreams</p>
+    <p class="card-text">Decentralise your capability in collective synergy!</p>
   </div>
 </div>
 </div>
-<div class="learn-more">Learn More!</div>
+<div class="learn-more">Learn More?</div>
 <div class="learn-line"></div>
 </section>
 
@@ -134,9 +137,6 @@
         <!-- Speakers section -->
         <h2 class="speaker-title">Speakers</h2>
         <div id="speakers"></div>
-
-
-          </div>
 
 <footer class="web-logos">
   <h2>Future Sponsors</h2>
@@ -152,10 +152,6 @@
   <h2 class="end-logo">Ω</h2>
   <p class="slogan">Web3 iz always better!</p>
   </div>
-
-
-
-
-
+</footer>
 </body>
 </html>
