@@ -235,7 +235,6 @@ h2.heading {
   background: rgba(255, 255, 255, 0.1);
 }
 
-
 /* speakers */
 
 .speaker-image {
@@ -264,7 +263,6 @@ h2.speaker-title {
   width: 50%;
   margin: 0 auto;
 }
-
 
 /* Headline section */
 
@@ -345,7 +343,6 @@ h2.speaker-title {
   border: 3px solid darkblue;
   border-radius: 3px;
 }
-
 
 /* end of header-bottom */
 
