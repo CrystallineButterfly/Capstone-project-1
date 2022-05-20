@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# WEB3 CONFERENCE CAPSTONE FOR MICROVERSE
 
 Hi, this is a Web3 Conference page made in relation to a template for my first capstone project of @microverse!
 I hope you enjoy, it was great fun making it!
