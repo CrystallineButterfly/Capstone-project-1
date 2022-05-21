@@ -3,7 +3,7 @@ const speakers = [
   {
     Name: 'Kacie',
     Web3Dao: 'LearnWeb3',
-    Summary: 'Kacie won his first hackathon after 2 months of web3!',
+    Summary: 'Kacie won his first hackathon after 2 months of web3! Smash!',
     Image: {
       url: './Images/web3.gif',
       alt: 'Web3 BOSS',
@@ -12,7 +12,7 @@ const speakers = [
   {
     Name: 'K42',
     Web3Dao: 'Web3 creator/developer',
-    Summary: 'Its all data waves, lets surf the network!',
+    Summary: 'Its all data waves, lets surf the network! We rise together, forever!',
     Image: {
       url: './Images/K42.gif',
       alt: 'Web3 BOSS',
@@ -21,7 +21,7 @@ const speakers = [
   {
     Name: 'Metalisa',
     Web3Dao: 'Web3 creator/developer',
-    Summary: 'Metalisa is an amazing artist and a bright soul',
+    Summary: 'Metalisa is an amazing artist and a bright soul, he can levitate!',
     Image: {
       url: './Images/Eye.png',
       alt: 'Web3 BOSS',
@@ -30,7 +30,7 @@ const speakers = [
   {
     Name: 'Datadigit',
     Web3Dao: 'Web3 user',
-    Summary: 'Datadigit spends 142 ETH a day!',
+    Summary: 'Datadigit spends 142 ETH a day, it is all digital baby!',
     Image: {
       url: './Images/Viking.png',
       alt: 'Web3 BOSS',
@@ -39,7 +39,7 @@ const speakers = [
   {
     Name: 'Vik',
     Web3Dao: 'Dao creator',
-    Summary: 'Vik is a owner of a VVC and a DAO creator',
+    Summary: 'Vik is a owner of a VVC and a DAO creator, he loves volcanoes and cold water',
     Image: {
       url: './Images/vik.png',
       alt: 'Web3 BOSS',
@@ -48,7 +48,7 @@ const speakers = [
   {
     Name: 'Web3 whale',
     Web3Dao: 'Lets buy NFTS',
-    Summary: 'I buy NFTS',
+    Summary: 'I buy NFTS, and that is all!',
     Image: {
       url: './Images/whale.png',
       alt: 'Web3 BOSS',
@@ -67,9 +67,9 @@ function createSpeakerCard({
       alt="Speaker 1"
     />
     <div class="speaker-body">
-      <div class="speaker-name">${Name}</div>
-      <p class="speaker-occupation">${Web3Dao}</p>
-      <p class="speaker-about">${Summary}</p>
+      <div id="speaker-name1" class="speaker-name">${Name}</div>
+      <p id="speaker-occupation" class="speaker-occupation">${Web3Dao}</p><hr class="line2">
+      <p id="speaker-about1" class="speaker-about">${Summary}</p>
     </div>
   </div>
   `;

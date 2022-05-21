@@ -247,10 +247,31 @@ h2.speaker-title {
   text-align: center;
 }
 
+.line2 {
+  width: 20%;
+}
+
+#speaker-about1 {
+  color: #272a31;
+  padding: 10px 0;
+}
+
+#speaker-occupation {
+  color: #ec5242;
+  padding: 10px 0;
+}
+
+#speaker-name1 {
+  color: #272a31;
+  font-weight: 550;
+}
+
 #speakers {
   display: grid;
+  padding: 10px 0;
   padding-top: 42px;
   gap: 6.25rem;
+  font-size: 18px;
   font-weight: 500;
   color: #272a31;
   grid-template-columns: 1fr 1fr;
@@ -278,7 +299,7 @@ h2.speaker-title {
 }
 
 .card {
-  margin: 20px 2%;
+  margin: 20px 2px;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.1);
@@ -704,7 +725,8 @@ footer h2 {
   }
 
   .btn-open {
-    position: absolute;
+    display: flex;
+    justify-content: start;
     margin-top: -0.625rem;
     border: none;
     cursor: pointer;
@@ -713,7 +735,6 @@ footer h2 {
   }
 
   .btn-open-img {
-    margin: 0 410px;
     height: 1.5rem;
   }
 
