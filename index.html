@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Confernce website for capstone1</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css”>
+    <script src="./Js/Speakers.js" defer></script>
+    <script src="./Js/Dynamics.js" defer></script>
+    <script src=”https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js” defer></script>
+<body>
+    <div class="top-bar">
+      <ul>
+        <li><a href="https://github.com/CrystallineButterfly"><img src="./Images/github.svg" alt="github"></a></li>
+        <li><a href="https://twitter.com/CrystAlline_K42"><img src="./Images/twitter.svg" alt="twitter"></a></li>
+        <li>code</li>
+        <li>login</li>
+        <li>language</li>
+      </ul>
+    </div>
+    <header>
+      <div class="container main-nav">
+        <div class="logo">Ω</div>
+        <nav class="all-pages">
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="#" class="nav-link">Game</a>
+          <a href="#" class="nav-link">More Alpha</a>
+          <a href="#" class="nav-link">Hire us?</a>
+          <a href="#" class="nav-link">Sponsors</a>
+          <a href="#speakers" class="nav-link border">Speakers</a>
+        </nav>
+      </div>
+        <!-- MOBILE RESPONSIVE-->
+      <nav class="mobile-menu">
+        <!--Mobile Nav-->
+        <!-- <div class="mylogo">logo</div> -->
+        <div class="mobile-nav-bar">
+          <div class="btn-nav-open">
+            <button class="btn-open" type="button">
+              <img
+                class="btn-open-img"
+                src="./Images/Union.svg"
+                alt="hamburger menu"/>
+            </button>
+          </div>
+          <div class="mobile-nav-container">
+            <div class="btn-nav-close">
+              <button class="btn-close" type="button">X</button>
+            </div>
+            <div class="menu-list-items">
+              <a class="menu-title" href="./about.html">About</a>
+              <a class="menu-title" href="#">Game</a>
+              <a class="menu-title" href="#">More Alpha</a>
+              <a class="menu-title" href="#about">Hire us?</a>
+              <a class="menu-title" href="#">Sponsors</a>
+              <a class="menu-title" href="#speakers">Speakers</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section-intial-page -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="container-small">
+          <div class="headline-section">
+            <h1 class="first-heading">"Hello! Web2 World"</h1>
+            <h1 class="heading">
+              WEB3 - A TALK,
+              Welcome!
+            </h1>
+            <p class="supporting-text">
+             Are you ready to leave web2 behind? 
+             Join us for ALPHA that may cause you to Rug pull yourself from Web2!
+             Web 2 = a place where data and information is easily stolen and mis-used, with too much bias on intention.
+             Web3 = a place where openness and creativity via innovation and transformation is intergal, and fully supported.  
+           </p>
+
+            <!-- Highlight with icons-->
+            <div class="call-to-action">2024.04.02(Start) ~ 2042(Finish)</div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section extra for first page -->
+  <!-- section for cards -->
+  <section class="bg">
+    <div>
+    <h2 class="card-head">Alpha Program</h2>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="cards">
+<div class="card">
+  <img src="./Images/Blockchain-Icon.webp" alt="blockchain" class="img">
+  <div class="card-body">
+    <h5 class="card-title">Blockchain Dynamics</h5>
+    <p class="card-text">The block chain is a dance of opcodes with high level encryption in a song, played by us.</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./Images/eth1.webp" class="card-img-top" alt="Web3 Image">
+  <div class="card-body">
+    <h5 class="card-title">Smart contracts: The use cases!</h5>
+    <p class="card-text">Main languages to learn, and a dance with the EVM song!</p>
+  </div>
+</div>
+<div class="card">
+  <img src="./Images/42.webp" class="card-img-top" alt="Web3 Image">
+  <div class="card-body">
+    <h5 class="card-title">Metaverves and intergration</h5>
+    <p class="card-text">Take a dive into what will be, the digital dreams we can all share and percieve!</p>
+  </div>
+</div>
+<div class="card">
+  <img src="./Images/DAO.webp" class="card-img-top" alt="Web3 Image">
+  <div class="card-body">
+    <h5 class="card-title">DAOS: The next step for all networks</h5>
+    <p class="card-text">Decentralise your capability in collective synergy!</p>
+  </div>
+</div>
+</div>
+<div class="learn-more">Learn More?</div>
+<div class="learn-line"></div>
+</section>
+
+<!-- section end -->
+        <!-- Speakers section -->
+        <h2 class="speaker-title">Speakers</h2>
+        <div id="speakers"></div>
+
+<footer class="web-logos">
+  <h2>Future Sponsors</h2>
+  <div class="learn-line"></div>
+<div class="sponsors">
+<img src="./Images/fox.webp" alt="metamask">
+<img src="./Images/learn.webp" alt="learnweb3">
+<img src="./Images/whale.webp" alt="whale">
+<img src="./Images/opensea.webp" alt="opensea">
+<img src="./Images/sandbox.webp" alt="sandbox">
+</div>
+<div class="end">
+  <h2 class="end-logo">Ω</h2>
+  <p class="slogan">Web3 iz always better!</p>
+  </div>
+</footer>
+</body>
+</html>
